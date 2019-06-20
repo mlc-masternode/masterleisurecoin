@@ -1,0 +1,26 @@
+# /etc/conf.d/masterleisurecoind: config file for /etc/init.d/masterleisurecoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/masterleisurecoin/masterleisurecoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/masterleisurecoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/masterleisurecoind.pid"
+
+# Where to write masterleisurecoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/masterleisurecoind"
+
+# User and group to own masterleisurecoind process
+#BITCOIND_USER="masterleisurecoin"
+#BITCOIND_GROUP="masterleisurecoin"
+
+# Path to masterleisurecoind executable
+#BITCOIND_BIN="/usr/bin/masterleisurecoind"
+
+# Nice value to run masterleisurecoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

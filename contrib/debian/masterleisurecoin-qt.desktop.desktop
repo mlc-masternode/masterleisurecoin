@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Masterleisurecoin
+Comment=Masterleisurecoin P2P Cryptocurrency
+Exec=masterleisurecoin-qt %u
+Terminal=false
+Type=Application
+Icon=masterleisurecoin128
+MimeType=x-scheme-handler/masterleisurecoin;
+Categories=Office;Finance;
+Name[en_US]=masterleisurecoin-qt.desktop

@@ -1,0 +1,11 @@
+[Protocol]
+exec=masterleisurecoin-qt '%u'
+protocol=masterleisurecoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

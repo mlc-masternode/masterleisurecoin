@@ -1,0 +1,26 @@
+[Unit]
+Description=Masterleisurecoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=masterleisurecoin
+Group=masterleisurecoin
+
+Type=forking
+PIDFile=/var/lib/masterleisurecoind/masterleisurecoind.pid
+
+ExecStart=/usr/bin/masterleisurecoind -daemon -pid=/var/lib/masterleisurecoind/masterleisurecoind.pid \
+          -conf=/etc/masterleisurecoin/masterleisurecoin.conf -datadir=/var/lib/masterleisurecoind
+
+ExecStop=-/usr/bin/masterleisurecoin-cli -conf=/etc/masterleisurecoin/masterleisurecoin.conf \
+         -datadir=/var/lib/masterleisurecoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
